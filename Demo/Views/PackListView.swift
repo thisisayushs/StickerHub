@@ -34,7 +34,7 @@ struct PackListView: View {
                                 }
                             }
                             
-                            AdView().padding(.vertical, 11)
+                            AdView().padding(.top, 11)
                             
                             ForEach(0..<3) { i in
                                 ZStack {
