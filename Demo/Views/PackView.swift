@@ -13,7 +13,7 @@ struct PackView: View {
         ZStack {
             BackgroundView()
             VStack {
-                HeaderView(title: "Fall Vibes 🍂", iconName: "ellipsis")
+                HeaderView(title: "Fall Vibes 🍂", iconName: "ellipsis", subTitleText: "40 Stickers")
                 
                     
                 

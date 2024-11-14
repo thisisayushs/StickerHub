@@ -28,10 +28,11 @@ struct AddButtonView: View {
                 .font(.system(size: 17))
                 .fontWeight(.bold)
                 .fontDesign(.rounded)
-                .foregroundStyle(.white.opacity(0.3))
+                .foregroundStyle(.white.opacity(0.5))
                 .padding(.vertical, 3)
             
-        }    }
+        }
+    }
 }
 
 #Preview {

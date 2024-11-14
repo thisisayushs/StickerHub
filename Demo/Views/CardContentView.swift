@@ -41,7 +41,7 @@ struct CardContentView: View {
                 Text("23 Stickers")
                     .font(.system(size: 17))
                     .fontWeight(.bold)
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(.white.opacity(0.5))
                 
                 Text(returnTitle())
                     .font(.system(size: 28))
