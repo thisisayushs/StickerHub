@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		820D78CD2CE5732F001B6862 /* VariableBlurView in Frameworks */ = {isa = PBXBuildFile; productRef = 820D78CC2CE5732F001B6862 /* VariableBlurView */; };
-		82FFE9682CE5606A007AFE4A /* Glur in Frameworks */ = {isa = PBXBuildFile; productRef = 82FFE9672CE5606A007AFE4A /* Glur */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				820D78CD2CE5732F001B6862 /* VariableBlurView in Frameworks */,
-				82FFE9682CE5606A007AFE4A /* Glur in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +70,6 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				82FFE9672CE5606A007AFE4A /* Glur */,
 				820D78CC2CE5732F001B6862 /* VariableBlurView */,
 			);
 			productName = Demo;
@@ -104,7 +101,6 @@
 			mainGroup = 82983F212CE53A5B007B4C35;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				82FFE9662CE5606A007AFE4A /* XCRemoteSwiftPackageReference "Glur" */,
 				820D78CB2CE5732F001B6862 /* XCRemoteSwiftPackageReference "VariableBlurView" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -361,14 +357,6 @@
 				minimumVersion = 1.0.2;
 			};
 		};
-		82FFE9662CE5606A007AFE4A /* XCRemoteSwiftPackageReference "Glur" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/joogps/Glur.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -376,11 +364,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 820D78CB2CE5732F001B6862 /* XCRemoteSwiftPackageReference "VariableBlurView" */;
 			productName = VariableBlurView;
-		};
-		82FFE9672CE5606A007AFE4A /* Glur */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 82FFE9662CE5606A007AFE4A /* XCRemoteSwiftPackageReference "Glur" */;
-			productName = Glur;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
