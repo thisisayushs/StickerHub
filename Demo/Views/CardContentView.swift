@@ -14,9 +14,9 @@ struct CardContentView: View {
     
     func returnTitle() -> String {
         if content == fallVibes {
-            "Fall Vibes"
+            "Fall Vibes 🍂"
         } else if content == cozyChristmas {
-            "Cozy Christmas"
+            "Cozy Christmas Vibes ❄️"
         } else if content == movie {
             "Cinema Core"
         } else {
@@ -28,11 +28,11 @@ struct CardContentView: View {
         
         VStack(spacing: 11) {
             
-            HStack(spacing: 32) {
+            HStack(spacing: 28) {
               
                 ForEach(content, id: \.self) { item in
                     Text(item)
-                        .font(.system(size: 56))
+                        .font(.system(size: 50))
                 }
                 
             }
@@ -41,10 +41,12 @@ struct CardContentView: View {
                 Text("23 Stickers")
                     .font(.system(size: 17))
                     .fontWeight(.bold)
-                    .foregroundStyle(.gray)
+                    .foregroundStyle(.white.opacity(0.4))
                 
                 Text(returnTitle())
                     .font(.system(size: 28))
+                    .frame(width: 220, height: 8)
+                    .truncationMode(.tail)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
                 

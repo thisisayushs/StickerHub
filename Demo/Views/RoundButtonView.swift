@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct RoundButtonView: View {
+    
+    var iconName = "gearshape.fill"
+    var offSet: CGFloat = 0
+    var iconSize: CGFloat = 21
     var body: some View {
         ZStack {
             Rectangle()
@@ -20,9 +24,11 @@ struct RoundButtonView: View {
                 .blur(radius: 0)
                 .padding()
             
-            Image(systemName: "gearshape.fill")
-                .font(.system(size: 21))
+            Image(systemName: iconName)
+                .font(.system(size: iconSize))
                 .foregroundStyle(.white)
+                .fontWeight(.bold)
+                .padding(.bottom, offSet)
             
         }
     }

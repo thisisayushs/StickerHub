@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct HeaderView: View {
+    var title = "Your Emoji"
+    var iconName: String = "gearshape.fill"
     var body: some View {
         HStack {
-            Text("Your Emoji")
+            Text(title)
                 .padding()
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -20,7 +22,7 @@ struct HeaderView: View {
             
             Spacer()
             
-            RoundButtonView()
+            RoundButtonView(iconName: iconName)
         }
     }
 }

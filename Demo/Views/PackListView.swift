@@ -12,40 +12,45 @@ import VariableBlurView
 struct PackListView: View {
     var body: some View {
         
+        
         ZStack {
             BackgroundView()
             
-            ScrollView(.vertical) {
+            VStack {
+                HeaderView()
                 
-                VStack {
+                
+                ScrollView(.vertical) {
                     
-                    HeaderView()
                     
-                    ScrollView {
                         
-                                                
-                        ForEach(0..<2) { i in
-                            ZStack {
-                                CardView()
-                                CardContentView()
+                        ScrollView {
+                            
+                            
+                            ForEach(0..<2) { i in
+                                ZStack {
+                                    CardView()
+                                    CardContentView()
+                                }
                             }
-                        }
-                        
-                        AdView()
-                        
-                        ForEach(0..<3) { i in
-                            ZStack {
-                                CardView()
-                                CardContentView()
-                                
+                            
+                            AdView().padding(.vertical, 11)
+                            
+                            ForEach(0..<3) { i in
+                                ZStack {
+                                    CardView()
+                                    CardContentView()
+                                    
+                                }
                             }
-                        }
-                        
-                    }
+                            
+                        }.padding(.bottom, 125)
+                    
+                    
                 }
                 
+                
             }
-            
             ZStack {
                 VStack {
                     

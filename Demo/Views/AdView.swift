@@ -17,11 +17,13 @@ struct AdView: View {
             HStack {
                 VStack {
                     Text("Sticker Hub Pro")
-                        .foregroundStyle(.black)
+                        .foregroundStyle(Color(red: 0.25, green: 0.25, blue: 0.25))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     Text("Remove Ads")
-                        .foregroundStyle(.gray)
-                    
+                        .foregroundStyle(Color(red: 0.75, green: 0.75, blue: 0.75))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
+                
                 .font(.system(size: 25))
                 .fontDesign(.rounded)
                 .fontWeight(.bold)
@@ -50,7 +52,7 @@ struct AdView: View {
                         
                     
                     
-            }
+            }.padding(.horizontal, 40)
                 
         }
     }

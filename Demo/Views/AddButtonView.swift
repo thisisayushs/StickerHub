@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct AddButtonView: View {
+    var iconName = "plus"
+    var title = "Add pack"
     var body: some View {
         VStack {
-                Image(systemName: "plus")
+            Image(systemName: iconName)
             .foregroundStyle(.white)
                 .font(.system(size: 28))
                 .fontDesign(.rounded)
@@ -22,7 +24,7 @@ struct AddButtonView: View {
                 
                 .clipShape(RoundedRectangle(cornerRadius: 50))
             
-            Text("Add pack")
+            Text(title)
                 .font(.system(size: 17))
                 .fontWeight(.bold)
                 .fontDesign(.rounded)
