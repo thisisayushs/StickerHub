@@ -1,0 +1,37 @@
+//
+//  AddButtonView.swift
+//  Demo
+//
+//  Created by Ayush Singh on 11/14/24.
+//
+
+import SwiftUI
+
+struct AddButtonView: View {
+    var body: some View {
+        VStack {
+                Image(systemName: "plus")
+            .foregroundStyle(.white)
+                .font(.system(size: 28))
+                .fontDesign(.rounded)
+                .fontWeight(.bold)
+                
+                .padding(.horizontal, 28)
+                .padding(.vertical, 16)
+                .background(.ultraThinMaterial)
+                
+                .clipShape(RoundedRectangle(cornerRadius: 50))
+            
+            Text("Add pack")
+                .font(.system(size: 17))
+                .fontWeight(.bold)
+                .fontDesign(.rounded)
+                .foregroundStyle(.white.opacity(0.3))
+                .padding(.vertical, 3)
+            
+        }    }
+}
+
+#Preview {
+    AddButtonView()
+}
