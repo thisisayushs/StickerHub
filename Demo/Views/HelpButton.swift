@@ -23,7 +23,7 @@ struct HelpButton: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)
                     .frame(width: 350, height: 50)
-                    .foregroundStyle(.ultraThinMaterial)
+                    .foregroundStyle(Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0.5))
                 
                 
                 HStack {
@@ -31,7 +31,7 @@ struct HelpButton: View {
                     Text("How to add and save Genmoji?")
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 50)
+                .padding(.leading, 45)
                 .foregroundStyle(.white)
                 .fontWeight(.semibold)
                 

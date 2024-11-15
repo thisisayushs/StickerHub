@@ -32,10 +32,28 @@ struct SettingsView: View {
                 
                 HStack(spacing: 18) {
                     BackgroundSelectorView(imageName: "default")
-                    ForEach(["gray", "blue", "green", "red"], id: \.self) { image in
+                    ZStack {
+                        HStack(spacing: 18) {
+                            
+                            ForEach(["gray", "blue", "green", "red"], id: \.self) { image in
+                                
+                                BackgroundSelectorView(imageName: image, isSelected: false)
+                            }
+                            
+                        }
                         
-                        BackgroundSelectorView(imageName: image, isSelected: false)
+                        RoundedRectangle(cornerRadius: 30)
+                            .foregroundStyle(Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0.5))
+                            .frame(width: 300, height: 120)
+                        
+                        Text("Unlock backgrounds with Pro")
+                            .font(.system(size: 17))
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.white)
+                            
+                            
                     }
+                    
                     
                 }.padding()
                 
