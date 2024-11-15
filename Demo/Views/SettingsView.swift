@@ -44,7 +44,8 @@ struct SettingsView: View {
                         
                         RoundedRectangle(cornerRadius: 30)
                             .foregroundStyle(Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0.5))
-                            .frame(width: 300, height: 120)
+                            .frame(width: 320, height: 120)
+                            
                         
                         Text("Unlock backgrounds with Pro")
                             .font(.system(size: 17))
@@ -55,9 +56,9 @@ struct SettingsView: View {
                     }
                     
                     
-                }.padding()
+                }
                 
-                HelpButton().padding(.vertical)
+                HelpButton()
                 
                 Spacer()
                 
