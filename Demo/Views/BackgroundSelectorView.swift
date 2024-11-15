@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BackroundSelectorView: View {
+struct BackgroundSelectorView: View {
     var imageName: String = "default"
     @State var isSelected: Bool = true
     func returnOpacity() -> CGFloat {
@@ -23,7 +23,7 @@ struct BackroundSelectorView: View {
             RoundedRectangle(cornerRadius: 19.5).stroke(.white.opacity(returnOpacity()), lineWidth: 3)
                 .frame(width: 59, height: 81)
             ZStack {
-                BackgroundView(imageName: "blue")
+                BackgroundView(imageName: imageName)
                     .frame(width: 50, height: 72)
                     .cornerRadius(15)
             }
@@ -35,5 +35,5 @@ struct BackroundSelectorView: View {
 }
 
 #Preview {
-    BackroundSelectorView()
+    BackgroundSelectorView()
 }
