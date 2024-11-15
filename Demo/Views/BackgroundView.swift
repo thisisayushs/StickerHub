@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct BackgroundView: View {
+    var imageName = "default"
     var body: some View {
-        Image("background")
+        Image(imageName)
             .resizable()
             .ignoresSafeArea()
             

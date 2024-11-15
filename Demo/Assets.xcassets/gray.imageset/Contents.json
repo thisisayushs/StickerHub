@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "dominik-schroder-FIKD9t5_5zQ-unsplash.jpg",
+      "filename" : "gray.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "gray2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "gray3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
