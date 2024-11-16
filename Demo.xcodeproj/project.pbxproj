@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		820D78CD2CE5732F001B6862 /* VariableBlurView in Frameworks */ = {isa = PBXBuildFile; productRef = 820D78CC2CE5732F001B6862 /* VariableBlurView */; };
+		82C362682CE9137700E35865 /* Sticker in Frameworks */ = {isa = PBXBuildFile; productRef = 82C362672CE9137700E35865 /* Sticker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C362682CE9137700E35865 /* Sticker in Frameworks */,
 				820D78CD2CE5732F001B6862 /* VariableBlurView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = Demo;
 			packageProductDependencies = (
 				820D78CC2CE5732F001B6862 /* VariableBlurView */,
+				82C362672CE9137700E35865 /* Sticker */,
 			);
 			productName = Demo;
 			productReference = 82983F2A2CE53A5B007B4C35 /* Demo.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				820D78CB2CE5732F001B6862 /* XCRemoteSwiftPackageReference "VariableBlurView" */,
+				82C362662CE9137700E35865 /* XCRemoteSwiftPackageReference "sticker" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 82983F2B2CE53A5B007B4C35 /* Products */;
@@ -357,6 +361,14 @@
 				minimumVersion = 1.0.2;
 			};
 		};
+		82C362662CE9137700E35865 /* XCRemoteSwiftPackageReference "sticker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bpisano/sticker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -364,6 +376,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 820D78CB2CE5732F001B6862 /* XCRemoteSwiftPackageReference "VariableBlurView" */;
 			productName = VariableBlurView;
+		};
+		82C362672CE9137700E35865 /* Sticker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82C362662CE9137700E35865 /* XCRemoteSwiftPackageReference "sticker" */;
+			productName = Sticker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,6 +1,15 @@
 {
-  "originHash" : "1e3ec830ed8b05cb503d3cd696943dca68d00550e59842c75a12c2e0892a56ba",
+  "originHash" : "5e86083eef03a68a4e54a309f79eac563bd3346590d47fcc37a22fc34ee9616a",
   "pins" : [
+    {
+      "identity" : "sticker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bpisano/sticker",
+      "state" : {
+        "revision" : "c9dad154c97b69ddecd68ff5695b38f1efeb262a",
+        "version" : "1.2.0"
+      }
+    },
     {
       "identity" : "variableblurview",
       "kind" : "remoteSourceControl",
