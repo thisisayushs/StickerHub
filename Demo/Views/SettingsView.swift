@@ -24,16 +24,20 @@ struct SettingsView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 
-                Text("Background")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal)
-                    .foregroundStyle(.white.opacity(0.5))
-                    .fontWeight(.semibold)
+                HStack {
+                    Image(systemName: "paintpalette.fill")
+                    Text("Background")
+                }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
+                        .foregroundStyle(.white.opacity(0.5))
+                        .fontWeight(.semibold)
                 
-                HStack(spacing: 18) {
+                
+                HStack() {
                     BackgroundSelectorView(imageName: "default")
                     ZStack {
-                        HStack(spacing: 18) {
+                        HStack() {
                             
                             ForEach(["gray", "blue", "green", "red"], id: \.self) { image in
                                 
@@ -44,7 +48,7 @@ struct SettingsView: View {
                         
                         RoundedRectangle(cornerRadius: 30)
                             .foregroundStyle(Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0.5))
-                            .frame(width: 320, height: 120)
+                            .frame(maxWidth: 290, maxHeight: 110)
                             
                         
                         Text("Unlock backgrounds with Pro")
@@ -58,7 +62,7 @@ struct SettingsView: View {
                     
                 }
                 
-                HelpButton()
+                HelpButton().padding()
                 
                 Spacer()
                 
