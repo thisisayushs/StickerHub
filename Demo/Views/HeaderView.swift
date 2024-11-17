@@ -22,9 +22,9 @@ struct HeaderView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                Spacer()
+                //Spacer()
                 
-                RoundButtonView(iconName: iconName)
+               // RoundButtonView(iconName: iconName)
             }
             HStack {
                 Text(subTitleText)

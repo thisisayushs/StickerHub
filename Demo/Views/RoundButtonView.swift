@@ -14,6 +14,7 @@ struct RoundButtonView: View {
     var iconSize: CGFloat = 21
     var circleDiameter: CGFloat = 40
     var body: some View {
+        
         ZStack {
             Rectangle()
                 .frame(width: circleDiameter, height: circleDiameter)

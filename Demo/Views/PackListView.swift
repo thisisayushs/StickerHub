@@ -11,71 +11,90 @@ import VariableBlurView
 
 struct PackListView: View {
     var body: some View {
-        
-        
-        ZStack {
-            BackgroundView()
-            
-            VStack {
-                HeaderView()
-                
-                
-                ScrollView(.vertical) {
+        NavigationStack {
+            ZStack {
+                BackgroundView()
+                VStack {
                     
+                    HStack {
+                        HeaderView()
+                        Spacer()
+                        NavigationLink(destination: SettingsView()) {
+                            RoundButtonView()
+                        }
+                    }
                     
-                        
-                        ScrollView {
+                    NavigationStack {
+                        List {
                             
-                            
-                            ForEach(0..<2) { i in
+                            ForEach(0..<4) { i in
+                                
                                 ZStack {
                                     CardView()
                                     CardContentView()
-                                }
-                            }
-                            
-                            AdView().padding(.top, 11)
-                            
-                            ForEach(0..<3) { i in
-                                ZStack {
-                                    CardView()
-                                    CardContentView()
+                                    NavigationLink(destination: PackView()) {
+                                        EmptyView()
+                                        
+                                        
+                                    }.opacity(0.0)
                                     
                                 }
+                                
                             }
+                            .listRowInsets(EdgeInsets.init(top: 10, leading: -15, bottom: 10, trailing: -15))
+                            .listRowBackground(Color.clear)
+                            .listRowSeparatorTint(.clear)
                             
-                        }.padding(.bottom, 125)
-                    
+                            RoundedRectangle(cornerRadius: 50)
+                                .frame(width: .infinity, height: 100)
+                                .foregroundStyle(.clear)
+                                .listRowInsets(EdgeInsets.init(top: 10, leading: -15, bottom: 10, trailing: -15))
+                                .listRowBackground(Color.clear)
+                                .listRowSeparatorTint(.clear)
+                            
+                            
+                            
+                            
+                            
+                        }
+                        
+                        
+                        
+                        
+                            .scrollContentBackground(.hidden)
+                            .background(BackgroundView())
+                        
+                        
+                        
+                    }
                     
                 }
-                
-                
-            }
-            ZStack {
-                VStack {
+                ZStack {
+                    VStack {
+                        
+                        
+                        VariableBlurView()
+                            .frame(height: 170)
+                            .allowsHitTesting(false)
+                        
+                        Spacer()
+                        
+                    }.rotationEffect(.degrees(-180))
+                        .ignoresSafeArea()
                     
-                    
-                    VariableBlurView()
-                        .frame(height: 170)
-                        .allowsHitTesting(false)
-                    
-                    Spacer()
-                    
-                }.rotationEffect(.degrees(-180))
-                    .ignoresSafeArea()
-                
-                VStack {
-                    Spacer()
-                    AddButtonView()
+                    VStack {
+                        Spacer()
+                        AddButtonView()
+                    }
                 }
+                
             }
-            
-            
-            
-        }
+        }.accentColor(.white)
     }
-    
 }
+
+
+
 
 #Preview {
     PackListView()
