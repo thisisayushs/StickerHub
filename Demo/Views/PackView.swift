@@ -10,44 +10,47 @@ import VariableBlurView
 
 struct PackView: View {
     var body: some View {
-        ZStack {
-            BackgroundView()
-            VStack {
-                HeaderView(title: "Fall Vibes 🍂", iconName: "ellipsis", subTitleText: "40 Stickers")
-                
-                    
-                
-                ScrollView(.vertical) {
-                    ScrollView {
-                        LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()], spacing: 10) {
-                            ForEach(0..<40) { _ in
-                                
-                                Text(fallVibes.randomElement()!)
-                                    .font(.system(size: 50))
-                            }
-                        }
-                    }.padding(.bottom, 125)
-                }
-            }
+        NavigationStack {
             ZStack {
+                BackgroundView()
                 VStack {
+                    HeaderView(title: "Fall Vibes 🍂", iconName: "ellipsis", subTitleText: "40 Stickers")
                     
                     
-                    VariableBlurView()
-                        .frame(height: 170)
-                        .allowsHitTesting(false)
                     
-                    Spacer()
+                    ScrollView(.vertical) {
+                        ScrollView {
+                            LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()], spacing: 10) {
+                                ForEach(0..<40) { _ in
+                                    NavigationLink(destination: LargeEmojiView()) {
+                                        Text(fallVibes.randomElement()!)
+                                            .font(.system(size: 50))
+                                    }
+                                }
+                            }
+                        }.padding(.bottom, 125)
+                    }
+                }
+                ZStack {
+                    VStack {
+                        
+                        
+                        VariableBlurView()
+                            .frame(height: 170)
+                            .allowsHitTesting(false)
+                        
+                        Spacer()
+                        
+                    }.rotationEffect(.degrees(-180))
+                        .ignoresSafeArea()
                     
-                }.rotationEffect(.degrees(-180))
-                    .ignoresSafeArea()
-                
-                VStack {
-                    Spacer()
-                    AddButtonView(iconName: "arrow.down", title: "Download pack")
+                    VStack {
+                        Spacer()
+                        AddButtonView(iconName: "arrow.down", title: "Download pack")
+                    }
                 }
             }
-        }
+        }.accentColor(.white)
     }
 }
 

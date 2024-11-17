@@ -27,7 +27,7 @@ struct PackListView: View {
                     NavigationStack {
                         List {
                             
-                            ForEach(0..<4) { i in
+                            ForEach(0..<5) { i in
                                 
                                 ZStack {
                                     CardView()
@@ -48,12 +48,9 @@ struct PackListView: View {
                             RoundedRectangle(cornerRadius: 50)
                                 .frame(width: .infinity, height: 100)
                                 .foregroundStyle(.clear)
-                                .listRowInsets(EdgeInsets.init(top: 10, leading: -15, bottom: 10, trailing: -15))
+                            
                                 .listRowBackground(Color.clear)
                                 .listRowSeparatorTint(.clear)
-                            
-                            
-                            
                             
                             
                         }
@@ -61,8 +58,8 @@ struct PackListView: View {
                         
                         
                         
-                            .scrollContentBackground(.hidden)
-                            .background(BackgroundView())
+                        .scrollContentBackground(.hidden)
+                        .background(BackgroundView())
                         
                         
                         
