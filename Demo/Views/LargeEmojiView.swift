@@ -55,15 +55,23 @@ struct LargeEmojiView: View {
                 }
             }.toolbar(content: {
                 ToolbarItem {
-                    Button {
-                        //Open Popover
+                    Menu {
+                        Button(action: {}, label: {
+                            Label("Save emoji", systemImage: "arrow.down")
+                        })
+                        Button(action: {}, label: {
+                            Label("Save whole pack", systemImage: "arrow.down")
+                        })
+                        
+                        Button(role: .destructive, action: {}, label: {
+                            Label("Delete from pack", systemImage: "trash")
+                        })
+                        
                     } label: {
                         RoundButtonView(iconName: "ellipsis", iconSize: 17, circleDiameter: 38)
-                        
-                        
-                        
-                        
                     }
+                    
+                    
                 }
             })
         }
