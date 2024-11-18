@@ -14,7 +14,7 @@ struct PackView: View {
             ZStack {
                 BackgroundView()
                 VStack {
-                    HeaderView(title: "Fall Vibes 🍂", iconName: "ellipsis", subTitleText: "40 Stickers")
+                    HeaderView(title: "Cozy Christmas ❄️", iconName: "ellipsis", subTitleText: "40 Stickers")
                     
                     
                     
@@ -23,7 +23,7 @@ struct PackView: View {
                             LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()], spacing: 10) {
                                 ForEach(0..<40) { _ in
                                     NavigationLink(destination: LargeEmojiView()) {
-                                        Text(fallVibes.randomElement()!)
+                                        Text(cozyChristmas.randomElement()!)
                                             .font(.system(size: 50))
                                     }
                                 }

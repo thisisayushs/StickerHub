@@ -18,7 +18,7 @@ struct LargeEmojiView: View {
                     
                     Spacer()
                     VStack {
-                        Text("🍂")
+                        Text("❄️")
                             .font(.system(size: 172))
                         
                             .stickerEffect()
@@ -34,10 +34,13 @@ struct LargeEmojiView: View {
                         
                         
                         
-                        
-                        HStack {
-                            Text("Part of the")
-                            Text("🍂 Fall vibes").foregroundStyle(.white)
+                        VStack {
+                            HStack {
+                                
+                                Text("Part of the")
+                                Text("Cozy Christmas ❄️").foregroundStyle(.white)
+                                
+                            }
                             Text("Sticker Hub pack")
                         }
                     }

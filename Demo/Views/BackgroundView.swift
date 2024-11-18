@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BackgroundView: View {
-    var imageName = "default"
+    var imageName = "blue"
     var body: some View {
         Image(imageName)
             .resizable()

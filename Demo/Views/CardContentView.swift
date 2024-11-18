@@ -16,7 +16,7 @@ struct CardContentView: View {
         if content == fallVibes {
             "Fall Vibes 🍂"
         } else if content == cozyChristmas {
-            "Cozy Christmas Vibes"
+            "Cozy Christmas"
         } else if content == movie {
             "Cinema Core"
         } else {
