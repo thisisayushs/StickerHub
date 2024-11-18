@@ -18,7 +18,7 @@ struct LargeEmojiView: View {
                     
                     Spacer()
                     VStack {
-                        Text("❄️")
+                        Text("☃️")
                             .font(.system(size: 172))
                         
                             .stickerEffect()
