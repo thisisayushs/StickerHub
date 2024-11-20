@@ -43,13 +43,49 @@ struct AddPackView: View {
                             .font(.system(size: 17).weight(.semibold))
                             .fontDesign(.rounded)
                     }
+                    
                     Spacer()
                     
                 }
-            }
+            ZStack {
+                        VStack {
+                            
                         
-        }
+                            VariableBlurView()
+                                .frame(height: 170)
+                                .allowsHitTesting(false)
+                            
+                            Spacer()
+                            
+                        }.rotationEffect(.degrees(-180))
+                            .ignoresSafeArea()
+                        
+                        VStack {
+                            Spacer()
+                            AddButtonView()
+                                .sheet(isPresented: .constant(true), content: {
+                                    ZStack(alignment: .center) {
+                                        RoundedRectangle(cornerRadius: 80)
+                                            .frame(width: 222, height: 222)
+                                            .foregroundStyle(Color(red: 0.9, green: 0.9, blue: 0.9))
+                                        TextField("",text: .constant(""))
+                                            .font(.system(size: 75).weight(.semibold))
+                                            .fontDesign(.rounded)
+                                            .frame(maxWidth: .infinity, alignment: .center)
+                                            .foregroundStyle(Color(red: 0.58, green: 0.58, blue: 0.58))
+                                            .padding(.leading, 176)
+                                            .foregroundStyle(.clear)
+                                        
+                                    }.accentColor(.clear)
+                                    
+                                })
+                        }
+                    }
+            }
         
+
+        }
+
     }
 
 
