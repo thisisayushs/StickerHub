@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UpgradeButton: View {
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 50)
