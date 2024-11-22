@@ -65,6 +65,7 @@ struct AddPackView: View {
                     
                     
                     AddButtonView()
+                    
                         .sheet(isPresented: .constant(true), content: {
                             Spacer()
                             ZStack(alignment: .center) {
@@ -80,7 +81,7 @@ struct AddPackView: View {
                                     .fontDesign(.rounded)
                                 
                                     .foregroundStyle(Color(red: 0.58, green: 0.58, blue: 0.58))
-                                    .padding(.leading, 176)
+                                    .padding(.leading, 162)
                                     .foregroundStyle(.clear)
                                 
                                 
@@ -88,7 +89,8 @@ struct AddPackView: View {
                             
                             Spacer()
                             
-                            AddToPackButton().padding()
+                            AddToPackButton()
+                                .padding()
                             
                         })
                 }
