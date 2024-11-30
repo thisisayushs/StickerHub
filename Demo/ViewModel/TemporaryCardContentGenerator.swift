@@ -7,7 +7,7 @@
 
 import Foundation
 
-let fallVibes = ["🍂","🥮", "🍁"]
+let fallVibes = StickerPack(title: "Fall Vibes", count: 40, content: ["🍂🍂"])
 let cozyChristmas = ["🎅🏻", "☃️", "☕️"]
 let movie = ["🎬", "🎞️", "🍿"]
 
@@ -17,7 +17,7 @@ func returnRandomContent() -> [String] {
     
     switch randomNumber {
     case 1:
-        return fallVibes
+        return cozyChristmas
     case 2:
         return cozyChristmas
     case 3:
