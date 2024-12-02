@@ -10,6 +10,8 @@ import VariableBlurView
 
 struct AddPackView: View {
     @State var text = ""
+    @State private var isPresented: Bool = false
+    
     var body: some View {
         ZStack {
             BackgroundView()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-let fallVibes = StickerPack(title: "Fall Vibes", count: 40, content: ["🍂🍂"])
+let fallVibes = ["🍁", "🥮", "🍂"]
 let cozyChristmas = ["🎅🏻", "☃️", "☕️"]
 let movie = ["🎬", "🎞️", "🍿"]
 

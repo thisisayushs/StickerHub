@@ -35,11 +35,11 @@ struct SettingsView: View {
                 
                 
                 HStack() {
-                    BackgroundSelectorView(imageName: "blue")
+                    BackgroundSelectorView(imageName: "default")
                     ZStack {
                         HStack() {
                             
-                            ForEach(["gray", "default", "green", "red"], id: \.self) { image in
+                            ForEach(["gray", "blue", "green", "red"], id: \.self) { image in
                                 
                                 BackgroundSelectorView(imageName: image, isSelected: false)
                             }
